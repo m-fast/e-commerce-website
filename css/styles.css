@@ -1,0 +1,266 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+.header {
+  background-color: rgb(210, 228, 223);
+  border-bottom: 3px solid rgb(25, 179, 148);
+  padding-block: 0.857rem;
+}
+.yy {
+  display: flex;
+  justify-content: space-between;
+}
+.a-header {
+  text-decoration: none;
+  color: black;
+}
+
+/* nav */
+.nav-link {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+.active {
+  color: rgb(25, 179, 148) !important;
+}
+.nav-link:hover {
+  color: rgb(25, 179, 148);
+}
+
+/* home */
+.butonnn {
+  padding: 15px;
+  width: 8rem;
+  border-radius: 15px;
+  margin-top: 1rem;
+  background-color: rgb(25, 179, 148);
+  border: none;
+  transition: all 0rgb (255, 255, 255);
+}
+.butonnn:hover {
+  background-color: rgb(69, 166, 147);
+  color: white;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+
+.animition {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* categories */
+.categories {
+  overflow: hidden;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.category-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.section {
+  padding-block: 2rem;
+}
+.category-title {
+  font-size: 20px;
+}
+.swiper {
+  overflow: initial;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: -1.875rem;
+  background-color: rgb(210, 228, 223);
+  border: 1px solid rgb(25, 179, 148);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: rgb(25, 179, 148);
+  font-size: 25px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+.swiper-button-prev {
+  left: initial;
+  right: 2.5rem;
+}
+.swiper-button-next {
+  right: 0;
+}
+
+/* featured */
+
+.bss {
+  background-color: rgb(52, 194, 165);
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 7px;
+  border: 1px solid white;
+}
+.bss1 {
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+.offer {
+  position: absolute;
+  top: 5px;
+  bottom: 1;
+  left: 8px;
+  padding: 4px;
+  background-color: rgb(25, 179, 148);
+  border-radius: 40px;
+  width: 5rem;
+  text-align: center;
+}
+.three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  background-color: rgb(209, 192, 67);
+  border-radius: 40px;
+}
+
+.tow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  background-color: rgb(30, 144, 170);
+  border-radius: 40px;
+}
+.five {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  background-color: rgb(26, 208, 123);
+  border-radius: 40px;
+}
+.buttton {
+  background-color: rgb(83, 173, 153);
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* .deels section */
+
+.deels {
+  background-image: url("../img/deals-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.women {
+  background-image: url("../img/deals-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 7rem;
+}
+.hoda {
+  padding: 6px;
+  border-radius: 5px;
+  background-color: rgb(25, 179, 148);
+  color: white;
+}
+
+.Arrivals {
+  overflow: hidden;
+}
+
+/* /////// */
+
+.h51 {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgb(25, 179, 148);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.h5 {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgb(25, 179, 148);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+body,html{
+  overflow-x: hidden;
+}
+
+@media (max-width: 788px) {
+  .card {
+    margin-top: 3rem;
+  }
+  .div {
+    height: auto;
+    padding: 20px;
+  }
+
+  .imggg,
+  .foorm {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .h55 h5 {
+    font-size: 16px;
+  }
+  .innnp {
+    width: 12rem;
+    padding: 6px;
+  }
+  .btnnnnnnn {
+    width: 6rem;
+  }
+  .address {
+    padding-top: 3rem;
+  }
+
+  .butonnn {
+    right: 0;
+  }
+  .img-home{
+    padding-top: 3rem;
+  }
+}

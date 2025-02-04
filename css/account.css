@@ -1,0 +1,229 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+.header {
+  background-color: rgb(210, 228, 223);
+  border-bottom: 3px solid rgb(25, 179, 148);
+  padding-block: 0.857rem;
+}
+.yy {
+  display: flex;
+  justify-content: space-between;
+}
+.a-header {
+  text-decoration: none;
+  color: black;
+}
+
+/* nav */
+.nav-link {
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+.active {
+  color: rgb(25, 179, 148) !important;
+}
+.nav-link:hover {
+  color: rgb(25, 179, 148);
+}
+/* 8//// */
+/* half-section    */
+.half-section {
+  margin-top: 3rem;
+  background-color: rgb(222, 228, 228);
+  height: 5rem;
+}
+.ffff {
+  margin-top: 3rem;
+}
+
+/* account */
+
+.back {
+  background-color: rgb(240, 242, 242);
+  min-height: 60vh;
+}
+
+.dashboard {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(25, 179, 148);
+  border-radius: 10px;
+}
+
+.same {
+  width: 100%;
+  height: 4rem;
+  border-radius: 10px;
+  border-bottom: 1px solid rgb(25, 179, 148);
+  background-color: white;
+}
+.same h4 {
+  padding: 18px;
+  color: black;
+}
+.same:hover {
+  background-color: rgb(25, 179, 148);
+}
+.same h4:hover {
+  color: white;
+}
+
+.half-section {
+  background-color: rgb(222, 228, 228);
+}
+.rosie {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(222, 228, 228);
+  border-radius: 5px;
+}
+.rosie h5 {
+  padding: 18px;
+}
+.p {
+  padding: 15px;
+  width: 100%;
+  height: 6rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#show-dashboard,
+#show-orders,
+#show-profile,
+#show-address,
+#show-password,
+#show-logout {
+  display: none;
+}
+.back:has(#dashboard:checked) #show-dashboard,
+.back:has(#orders:checked) #show-orders,
+.back:has(#profile:checked) #show-profile,
+.back:has(#address:checked) #show-address,
+.back:has(#password:checked) #show-password,
+.back:has(#logout:checked) #show-logout
+ {
+  display: block;
+}
+label:has(input:checked) h4 {
+  border-radius: 10px;
+  border-bottom: 1px solid rgb(25, 179, 148);
+  background-color: rgb(25, 179, 148);
+  color: white;
+}
+
+.p2 {
+  padding: 15px;
+  width: 100%;
+  height: 9rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.button-orders {
+  background-color: rgb(48, 156, 134);
+  padding: 9px;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+body,html{
+  overflow-x: hidden;
+}
+.p3{
+  padding: 15px;
+  width: 100%;
+  height: 19rem;
+  background-color: white;
+  border-radius: 5px;
+}
+.button-logout{
+  background-color: rgb(48, 156, 134);
+  padding: 9px;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.button-logout:hover , .button-orders:hover{
+  background-color: rgb(60, 179, 155);
+}
+.p4{
+  padding: 15px;
+  width: 100%;
+  height: 9rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+
+
+@media (max-width: 788px) {
+
+  .div {
+    height: auto;
+    padding: 20px;
+  }
+
+
+  .mmtt{
+    padding-top: 2rem;
+  }
+  .imggg,
+  .foorm {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .h55 h5 {
+    font-size: 16px;
+  }
+  .innnp {
+    width: 12rem;
+    padding: 6px;
+  }
+  .btnnnnnnn {
+    width: 6rem;
+  }
+  .address {
+    padding-top: 3rem;
+  }
+
+  .butonnn {
+    right: 0;
+  }
+  .img-home{
+    padding-top: 3rem;
+  }
+}
