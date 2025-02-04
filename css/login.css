@@ -1,0 +1,93 @@
+a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* header */
+  .header{
+    background-color: rgb(210, 228, 223);
+    border-bottom: 3px solid rgb(25, 179, 148);
+    padding-block: 0.857rem;
+  }
+  .yy{
+    display: flex;
+    justify-content: space-between;
+  }
+  .a-header{
+    text-decoration: none ;
+    color: black;
+  }
+  
+  
+  /* nav */
+  .nav-link{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease;
+  }
+  .active{
+    color: rgb(25, 179, 148)! important;
+  
+  }
+  .nav-link:hover{
+    color: rgb(25, 179, 148);
+  }
+  /* half-section    */
+.half-section{
+    margin-top: 3rem;
+    background-color: rgb(222, 228, 228);
+    height: 5rem;
+}
+.ffff{
+    margin-top: 3rem;
+}
+/* .fooorm */
+.section-form{
+    background-color: rgb(240, 242, 242);
+    min-height: 60vh;
+}
+.button{
+    padding: 13px;
+    border-radius:15px ;
+    background-color: rgb(25, 157, 130);
+    width: 9rem;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+    margin-left: 10rem;
+
+}
+.button:hover{
+    background-color: rgb(109, 184, 169);
+}
+.login{
+    height: 23rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5rem;
+    border-radius: 35px;
+
+}
+.butttton{
+    padding: 13px;
+    border-radius:15px ;
+    background-color: rgb(25, 157, 130);
+    width: 13rem;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+    margin-left: 8rem;
+
+}
+.butttton:hover{
+    background-color: rgb(109, 184, 169);
+}
+.register{
+    height: 30rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5rem;
+    border-radius: 35px;
+}
+.input{
+    
+}

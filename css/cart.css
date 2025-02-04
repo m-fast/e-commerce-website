@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* header */
+  .header{
+    background-color: rgb(210, 228, 223);
+    border-bottom: 3px solid rgb(25, 179, 148);
+    padding-block: 0.857rem;
+  }
+  .yy{
+    display: flex;
+    justify-content: space-between;
+  }
+  .a-header{
+    text-decoration: none ;
+    color: black;
+  }
+  
+  
+  /* nav */
+  .nav-link{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease;
+  }
+  .active{
+    color: rgb(25, 179, 148)! important;
+  
+  }
+  .m{
+    background-color: rgb(25, 179, 148)! important;
+    border-radius: 50px;
+    padding: 5.5px;
+  }
+  .nav-link:hover{
+    color: rgb(25, 179, 148);
+  }
+
+/* 8//// */
