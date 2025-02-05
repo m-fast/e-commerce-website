@@ -46,6 +46,10 @@ a{
     background-color: rgb(222, 228, 228);
     height: 5rem;
 }
+
+ body , html {
+  overflow-x: hidden;
+ }
 .ffff{
     margin-top: 3rem;
 }

@@ -41,10 +41,11 @@ a {
   background-color: rgb(25, 179, 148);
   border: none;
   transition: all 0rgb (255, 255, 255);
+  color: white;
 }
 .butonnn:hover {
-  background-color: rgb(69, 166, 147);
-  color: white;
+  background-color: hsl(168, 75%, 46%);
+  
 }
 .hidden {
   opacity: 0;
@@ -228,6 +229,17 @@ body,html{
   overflow-x: hidden;
 }
 
+.card{
+margin-top: 2rem;
+}
+
+#container a {
+  display: inline;
+  width: 23%;
+  margin: 1%;
+}
+
+
 @media (max-width: 788px) {
   .card {
     margin-top: 3rem;
@@ -236,6 +248,10 @@ body,html{
     height: auto;
     padding: 20px;
   }
+
+  .card{
+    padding-top: 2rem;
+    }
 
   .imggg,
   .foorm {
@@ -264,3 +280,13 @@ body,html{
     padding-top: 3rem;
   }
 }
+
+
+
+
+
+
+
+
+/* side mahmoud  */
+

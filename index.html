@@ -23,20 +23,9 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
-      <div class="header-top">
-        <div class="container yy">
-          <div class="header-contact">
-            <span>(+20)1212169109</span>
-            <span>our locatin </span>
-          </div>
-          <p class="header-alert">Lorem ipsum dolor sit amet consectetur.</p>
-          <a class="a-header" href="">Log In / Sign Up</a>
-        </div>
-      </div>
-    </header>
+    
     <!-- nav-section -->
-    <div class="">
+    <div class=" py-4" style="border-bottom: 2px solid rgb(25, 179, 148);">
       <nav class="navbar navbar-expand-sm">
         <div class="container tt">
           <img
@@ -62,7 +51,7 @@
                 <a class="nav-link m active" href="#">Home</a>
               </li>
               <li class="nav-item ms-5">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="./html filess/shop.html">Shop</a>
               </li>
               <li class="nav-item ms-5">
                 <a class="nav-link" href="./html filess/account.html"
@@ -74,19 +63,7 @@
                 <a class="nav-link" href="./html filess/login.html">Login</a>
               </li>
             </ul>
-            <form class="d-flex my-2 my-lg-0">
-              <input
-                class="form-control me-sm-2"
-                type="text"
-                placeholder="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
+            
 
             <div class="icon2 ms-2">
               <a href="./html filess/cart.html">
@@ -110,8 +87,11 @@
           <p class="lead">Hot Promotions</p>
           <h2
             class="display-3"
-            style="font-weight: 600; font-family: Arbutus Slab, serif;
-            font-size: 4.5rem;"
+            style="
+              font-weight: 600;
+              font-family: Arbutus Slab, serif;
+              font-size: 4.5rem;
+            "
           >
             Fashion Trending
           </h2>
@@ -127,7 +107,9 @@
             GREAT COLLECTION
           </h1>
           <p class="lead">gave more with coupons & up to 20% off</p>
-          <button class="btn butonnn" style="">Shop Now</button>
+          <a href="./html filess/shop.html"
+            ><button class="btn butonnn" style="">Shop Now</button></a
+          >
         </div>
         <div class="home-img col-md-6 text-center">
           <img
@@ -155,58 +137,61 @@
       <div class="newSwiper swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/T-shirt.html">
               <img class="category-img" src="./img/category-1.jpg" alt="" />
               <h3 class="category-title">T-Shirt</h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/Bags.html">
               <img class="category-img" src="./img/category-2.jpg" alt="" />
-              <h3 class="category-title">bogs</h3>
+              <h3 class="category-title">Bags</h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/Sandal.html">
               <img class="category-img" src="./img/category-3.jpg" alt="" />
-              <h3 class="category-title">sandal</h3>
+              <h3 class="category-title">
+                <script></script>
+                andal
+              </h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/Scorf-Cop.html">
               <img class="category-img" src="./img/category-4.jpg" alt="" />
-              <h3 class="category-title">scorf Cop</h3>
+              <h3 class="category-title">Scorf Cop</h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/Shoes.html">
               <img class="category-img" src="./img/category-5.jpg" alt="" />
               <h3 class="category-title">Shoes</h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/Pillowcase.html">
               <img class="category-img" src="./img/category-6.jpg" alt="" />
               <h3 class="category-title">Pillowcase</h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="./cetegories/Jumpsult.html">
               <img class="category-img" src="./img/category-7.jpg" alt="" />
               <h3 class="category-title">Jumpsult</h3>
             </a>
           </div>
 
           <div class="swiper-slide">
-            <a href="#">
+            <a href="cetegories/Hats.html">
               <img class="category-img" src="./img/category-8.jpg" alt="" />
-              <h3 class="category-title">Hots</h3>
+              <h3 class="category-title">Hats</h3>
             </a>
           </div>
         </div>
@@ -222,18 +207,20 @@
 
     <!-- featured -->
     <section class="container animition" style="padding-top: 5rem">
-      <div class="btns">
-        <button class="bss">Featured</button>
-        <button class="bss1 ms-2">Popular</button>
-        <button class="bss1 ms-2">New added</button>
+      <div class="btns" id="containerbtn">
+        <button class="bss" onclick="featured()" id="featuredbtn">Featured</button>
+        <button class="bss1 ms-2" onclick="popular()" id="popularbtn">Popular</button>
+        <button class="bss1 ms-2" onclick="newadded()" id="newaddedbtn">New added</button>
       </div>
-      <div class="row pt-5">
+      <!-- <div class="row pt-5">
         <div class="col-md-3">
           <div class="card text-start">
             <img class="card-img-top" src="./img/product-1-1.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">Sale</p>
               <p>
                 <span
@@ -246,21 +233,66 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -272,7 +304,9 @@
             <img class="card-img-top" src="./img/product-8-1.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%30</p>
               <p>
                 <span
@@ -285,19 +319,55 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -313,7 +383,9 @@
             />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%22</p>
               <p>
                 <span
@@ -326,21 +398,66 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -356,7 +473,9 @@
             />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%30</p>
               <p>
                 <span
@@ -369,35 +488,84 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row pt-5">
+      </div> -->
+      <div class="row pt-5" id="container"></div>
+
+      <!-- <div class="row pt-5">
         <div class="col-md-3">
           <div class="card text-start">
             <img class="card-img-top" src="./img/product-2-2.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">sale</p>
               <p>
                 <span
@@ -410,19 +578,55 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -434,7 +638,9 @@
             <img class="card-img-top" src="./img/product-3-2.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%50</p>
               <p>
                 <span
@@ -447,21 +653,66 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -473,7 +724,9 @@
             <img class="card-img-top" src="./img/product-9-2.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%10</p>
               <p>
                 <span
@@ -486,16 +739,43 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -511,7 +791,9 @@
             />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%60</p>
               <p>
                 <span
@@ -524,19 +806,55 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -550,7 +868,9 @@
             <img class="card-img-top" src="./img/product-8-2.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%22</p>
               <p>
                 <span
@@ -563,21 +883,66 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -589,7 +954,9 @@
             <img class="card-img-top" src="./img/product-5-2.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%10</p>
               <p>
                 <span
@@ -602,21 +969,66 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -628,7 +1040,9 @@
             <img class="card-img-top" src="./img/product-6-2.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">sale</p>
               <p>
                 <span
@@ -641,21 +1055,66 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
@@ -667,7 +1126,9 @@
             <img class="card-img-top" src="./img/product-7-1.jpg" alt="Title" />
             <div class="card-body">
               <p>Clothing</p>
-              <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+              <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                Colorful Pottern Shirf
+              </h4>
               <p class="card-text text-white offer">%30</p>
               <p>
                 <span
@@ -680,28 +1141,73 @@
                 >
                 <span style="text-decoration: line-through">$245.8</span>
               </p>
-              <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                </svg>
-                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                  </svg>
-                  <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                    </svg>
-                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                      </svg>
-                      <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z" fill="#FFC633"/>
-                        </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
+              <svg
+                width="19"
+                height="17"
+                viewBox="0 0 19 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                  fill="#FFC633"
+                />
+              </svg>
               <div class="div my-2 mt-4">
                 <a class="buttton text-white" href="">Add To Cart</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- .secttiooon imaggee -->
@@ -749,12 +1255,12 @@
             <div class="pt-2 sec" style="margin-left: 33px"><h5>Sec</h5></div>
           </div>
         </div>
-        <button
+        <a href="./html filess/shop.html"><button
           class="btn butonnn"
           style="margin-bottom: 58px; margin-top: 3rem"
         >
           Shop Now
-        </button>
+        </button></a>
       </div>
     </div>
 
@@ -777,7 +1283,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">%60</p>
                 <p>
                   <span
@@ -790,6 +1298,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -805,7 +1373,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">%10</p>
                 <p>
                   <span
@@ -818,6 +1388,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -833,7 +1463,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">sale</p>
                 <p>
                   <span
@@ -846,6 +1478,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -861,7 +1553,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">%10</p>
                 <p>
                   <span
@@ -874,6 +1568,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -889,7 +1643,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">%30</p>
                 <p>
                   <span
@@ -902,6 +1658,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -917,7 +1733,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">sale</p>
                 <p>
                   <span
@@ -930,6 +1748,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -945,7 +1823,9 @@
               />
               <div class="card-body">
                 <p>Clothing</p>
-                <h4 class="card-title"   style="font-family: Arbutus Slab, serif">Colorful Pottern Shirf</h4>
+                <h4 class="card-title" style="font-family: Arbutus Slab, serif">
+                  Colorful Pottern Shirf
+                </h4>
                 <p class="card-text offer">%50</p>
                 <p>
                   <span
@@ -958,6 +1838,66 @@
                   >
                   <span style="text-decoration: line-through">$245.8</span>
                 </p>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.24494 0L11.8641 5.63991L18.0374 6.38809L13.4829 10.6219L14.679 16.7243L9.24494 13.701L3.8109 16.7243L5.00697 10.6219L0.452479 6.38809L6.62573 5.63991L9.24494 0Z"
+                    fill="#FFC633"
+                  />
+                </svg>
                 <div class="div my-2 mt-4">
                   <a class="buttton text-white" href="">Add To Cart</a>
                 </div>
@@ -978,7 +1918,9 @@
     <section class="container" style="padding-top: 10rem">
       <div class="row">
         <div class="col-md-3">
-          <h5 class="pt-3 h5" style="font-family: Arbutus Slab, serif">Hot Releoses</h5>
+          <h5 class="pt-3 h5" style="font-family: Arbutus Slab, serif">
+            Hot Releoses
+          </h5>
 
           <div class="d-flex mt-5">
             <div class="div">
@@ -1054,7 +1996,9 @@
           </div>
         </div>
         <div class="col-md-3">
-          <h5 class="pt-3 h5" style="font-family: Arbutus Slab, serif">Deols& Outlet</h5>
+          <h5 class="pt-3 h5" style="font-family: Arbutus Slab, serif">
+            Deols& Outlet
+          </h5>
 
           <div class="d-flex mt-5">
             <div class="div">
@@ -1104,7 +2048,7 @@
               </p>
             </div>
           </div>
-          <div class="d-flex mt-5" >
+          <div class="d-flex mt-5">
             <div class="div">
               <img
                 style="width: 150px; height: 100px"
@@ -1130,7 +2074,9 @@
           </div>
         </div>
         <div class="col-md-3">
-          <h5 class="pt-3 h5" style="font-family: Arbutus Slab, serif">Top Selling</h5>
+          <h5 class="pt-3 h5" style="font-family: Arbutus Slab, serif">
+            Top Selling
+          </h5>
 
           <div class="d-flex mt-5" style="font-family: Arbutus Slab, serif">
             <div class="div">
@@ -1206,7 +2152,9 @@
           </div>
         </div>
         <div class="col-md-3">
-          <h5 class="pt-3 h51" style="font-family: Arbutus Slab, serif">Trendy</h5>
+          <h5 class="pt-3 h51" style="font-family: Arbutus Slab, serif">
+            Trendy
+          </h5>
 
           <div class="d-flex mt-5">
             <div class="div">
@@ -1429,5 +2377,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/featured_etc.js"></script>
   </body>
 </html>

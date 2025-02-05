@@ -121,6 +121,7 @@ bags.forEach(product => {
                   >
                   <span style="text-decoration: line-through">$${product.old_price}</span>
                 </p>
+                
               </div>
             </div>
           </a>`

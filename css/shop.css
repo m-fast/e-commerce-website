@@ -1,0 +1,152 @@
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* header */
+  .header {
+    background-color: rgb(210, 228, 223);
+    border-bottom: 3px solid rgb(25, 179, 148);
+    padding-block: 0.857rem;
+  }
+
+  body , html {
+    overflow-x: hidden;
+  }
+  .yy {
+    display: flex;
+    justify-content: space-between;
+  }
+  .a-header {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* nav */
+  .nav-link {
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.2s ease;
+  }
+  .active {
+    color: rgb(25, 179, 148) !important;
+  }
+  .nav-link:hover {
+    color: rgb(25, 179, 148);
+  }
+
+color {
+    color: rgb(25, 179, 148);
+  }
+  .color2 {
+    color: #156f6f;
+  }
+  .active {
+    color: rgb(25, 179, 148) !important;
+  }
+  .custom-button-active {
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    background-color: #006266;
+    transition: 250ms;
+  }
+  .custom-button-active:hover {
+    background-color: #006266;
+    color: white;
+    box-shadow: 0 5px 10px black;
+    transform: scale(1.03);
+  }
+  .custom-button {
+    color: black;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: 250ms;
+  }
+  .custom-button:hover {
+    background-color: #006266;
+    color: white;
+    box-shadow: 0 5px 10px black;
+    transform: scale(1.03);
+  }
+  .add-toCart-button {
+    background-color: #006266;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+  }
+  .width-for-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .black {
+    color: rgba(0, 0, 0, 0.575);
+  }
+  .width-for-info {
+    width: 90%;
+  }
+  @media (max-width: 900px) {
+    .width-for-info {
+      width: 100%;
+    }
+    .img-container {
+      display: none !important;
+    }
+    .add-toCart-button {
+      background-color: #006266;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .width-for-info {
+      margin: 0 !important;
+      padding: 0 !important;
+      display: flex;
+      justify-content: space-between;
+    }
+    .media {
+      margin: 0 !important;
+    }
+    .long-P {
+      width: 160px;
+    }
+    .height {
+    height: 80vh;
+  }
+
+  .imggg,
+  .foorm {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .h55 h5 {
+    font-size: 16px;
+  }
+  .innnp {
+    width: 12rem;
+    padding: 6px;
+  }
+  .btnnnnnnn {
+    width: 6rem;
+  }
+  .address {
+    padding-top: 3rem;
+  }
+
+  .butonnn {
+    right: 0;
+  }
+  .img-home{
+    padding-top: 3rem;
+  }
+  
+  }
